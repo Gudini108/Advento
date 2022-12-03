@@ -1,12 +1,8 @@
-f = open('C:/Users/gudin/Desktop/Пограммки/Advento/Day2/input.txt')
-
-rps = f.read()
-
-games_total = rps.split('\n')[1:-1] # getting list of all individual R-P-S contests without empty spaces
+games_total = open(r'C:\Users\gudin\Desktop\Пограммки\Advento\Day2\input.txt').read().split('\n')
 
 
-elf_hand = {'A':1, 'B':2, 'C':3} # A - rock / B - paper / C - scissors
-your_hand = {'X':1, 'Y':2, 'Z':3} # X - rock / Y - paper / Z - scissors
+elf_hand = {'A':1, 'B':2, 'C':3} # A - rock \ B - paper \ C - scissors
+your_hand = {'X':1, 'Y':2, 'Z':3} # X - rock \ Y - paper \ Z - scissors
 
 
 score = 0

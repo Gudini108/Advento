@@ -1,8 +1,4 @@
-f = open('C:/Users/gudin/Desktop/Пограммки/Advento/Day1/input.txt')
-
-puzzle_input = f.read()
-
-elves = puzzle_input.split('\n\n')
+elves = open(r'C:\Users\gudin\Desktop\Пограммки\Advento\Day1\input.txt').read().split('\n\n')
 
 elves_sep = []
 
