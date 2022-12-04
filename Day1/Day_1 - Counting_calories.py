@@ -1,4 +1,8 @@
-elves = open(r'C:\Users\gudin\Desktop\Пограммки\Advento\Day1\input.txt').read().split('\n\n')
+import os
+import sys
+
+with open(os.path.join(sys.path[0], "input.txt"), "r") as f:
+    elves = f.read().split('\n\n')
 
 elves_sep = []
 

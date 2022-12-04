@@ -1,4 +1,8 @@
-games_total = open(r'C:\Users\gudin\Desktop\Пограммки\Advento\Day2\input.txt').read().split('\n')
+import os
+import sys
+
+with open(os.path.join(sys.path[0], "input.txt"), "r") as f:
+    games_total = f.read().split('\n')
 
 
 elf_hand = {'A':1, 'B':2, 'C':3} # A - rock \ B - paper \ C - scissors

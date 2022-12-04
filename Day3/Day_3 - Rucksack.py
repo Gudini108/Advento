@@ -1,10 +1,14 @@
 import string
 import itertools
 
-rucksacks = open(r'C:\Users\gudin\Desktop\Пограммки\Advento\Day3\input.txt').read().split('\n')
+import os
+import sys
+
+with open(os.path.join(sys.path[0], "input.txt"), "r") as f:
+    rucksacks = f.read().split('\n')
 
 priorities = dict(enumerate(list(string.ascii_lowercase + string.ascii_uppercase), start=1)) # paring alphabet with numbers
-priorities = {v:k for (k,v) in priorities.items()} # swaping keys and values (0:a) -> (a:0)
+priorities = {v:k for (k,v) in priorities.items()} # swaping keys and values (1:a) -> (a:1)
 
 score = 0
 for compartments in rucksacks: # for each line in our list
