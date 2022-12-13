@@ -1,8 +1,6 @@
 import os
 import sys
 
-import numpy as np
-
 with open(os.path.join(sys.path[0], "input.txt"), "r") as f:
     directions = f.read().split('\n')
 
