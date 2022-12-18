@@ -3,9 +3,6 @@ import sys
 
 with open(os.path.join(sys. path[0], "input.txt"), "r") as f:
     valves = f.read().split('\n')
-    
-import time
-    
 
 valves_n_tunnels = {}
 

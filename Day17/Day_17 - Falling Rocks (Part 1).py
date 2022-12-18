@@ -3,8 +3,6 @@ import sys
 
 with open(os.path.join(sys. path[0], "input.txt"), "r") as f:
     wind_directions = list(f.read())
-    
-import time
 
 current_floor_row = -1
 floor_width = 7
@@ -65,8 +63,6 @@ shape_id = 0
 for rock in range(rocks_required):
     rock_shape = get_shape(shapes[shape_id])
     
-    #print('Step 1 - rock appeared', shapes[shape_id], rock_shape, current_floor_row)
-    
     for direction in wind_directions:
             
         if direction == '<': # if wind blows to the left
@@ -90,10 +86,7 @@ for rock in range(rocks_required):
             
             if is_blocked == False:
                 for seg in range(len(rock_shape)):
-                    rock_shape[seg][0] -= 1
-            
-            #print('Step 2 - rock is pushed', shapes[shape_id], rock_shape, current_floor_row, direction)
-                    
+                    rock_shape[seg][0] -= 1          
         
         else: # if wind blows to the right
             shape_check = 0
